@@ -60,7 +60,18 @@ body {
   font-size: 16px;
   margin: 10px;
   width: 100%;
-  
+}
+#navibutton1 {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  width: 100%;
 }
 .navibutton1:hover{
 	background-color: #27c498;
@@ -131,6 +142,21 @@ body {
 }
 
 .headerrow4{
-	text-color: white;
+	color: white;
+	background-color: #30302f ;
+}
+
+#headerrow5{
+	text-align:center ;
+	color: white ;
+}
+
+#headerrow6{
+	background-color: black;
+	padding: 10px ;
+}
+
+#headerrow7{
+	color: white;
 	background-color: #30302f ;
 }

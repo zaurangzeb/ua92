@@ -42,47 +42,142 @@
 					<img class="header_image" alt"technology" src="images_folder/homepage.jpg" width="100%" />
 				</div>
 			</div>	
-			
-			<div class="row">
-			 <div class="col-sm-4">
-			  <div class="card">
-			   <img src="images_folder/product_phone1.jpg"  alt="phone" width="100%">
-			   <div class="container_2">
-				<h2>Xperia</h2>
-				<p class="profession">£350</p>
-				<p>sim free</p>
-				<button class="navibutton1">add to cart</button>
-			   </div>
-			  </div>
-			 </div>
-			 <div class="col-sm-4">
-			  <div class="card">
-			   <img src="images_folder/product_tablet.jpeg"  alt="john" width="100%">
-			   <div class="container_2">
-				<h2>Ipad</h2>
-				<p class="profession">£300</p>
-				<p>12inch</p>
-				<button class="navibutton1">add to cart</button>
-			   </div>
-			  </div>
-			 </div>
-			 <div class="col-sm-4">
-			  <div class="card">
-			   <img src="images_folder/product_headphones.jpeg"  alt="john" width="100%">
-			   <div class="container_2">
-				<h2>headphones</h2>
-				<p class="profession">£150</p>
-				<p>extra padded muffs</p>
-				<button class="navibutton1">add to cart</button>
-			   </div>
-			  </div>
-			 </div>
+
+			<!--best seller section-->
+
+			<div class="row" id="headerrow3">
+				<div class="col-sm-12" id="headerrow5">
+				<h1>Best sellers</h1>
+				<div id="alerts"></div>
+				<a href="cart.html">See shopping cart or Checkout Now</a>
+				</div>
 			</div>
+			
+
+		<!--the products that are linked to the cart for buying with an alert and a link to the shopping cart-->
+		
+		<div class="productcont">
+				
+				<div class="row" id="headerrow3">
+				
+				<div class="product">
+				 <div class="col-sm-4">
+				  <div class="card">
+				   <img src="images_folder/product_phone1.jpg"  alt="phone" width="100%">
+				   <div class="container_2">
+					<h2 class="productname">Xperia</h2>
+					<p class="price">£350</p>
+					<p>sim free</p>
+					<button class="addtocart" id="navibutton1">add to cart</button>
+				   </div>
+				  </div>
+				 </div>
+				</div>
+				 
+				 <div class="product">
+				 <div class="col-sm-4">
+				  <div class="card">
+				   <img src="images_folder/product_tablet.jpeg"  alt="john" width="100%">
+				   <div class="container_2">
+					<h2 class="productname">Ipad</h2>
+					<p class="price">£300</p>
+					<p>12inch</p>
+					<button class="addtocart" id="navibutton1">add to cart</button>
+				   </div>
+				  </div>
+				 </div>
+				 </div>
+				 
+				 <div class="product">
+				 <div class="col-sm-4">
+				  <div class="card">
+				   <img src="images_folder/product_headphones.jpeg"  alt="john" width="100%">
+				   <div class="container_2">
+					<h2 class="productname">headphones</h2>
+					<p class="price">£150</p>
+					<p>extra padded muffs</p>
+					<button class="addtocart" id="navibutton1">add to cart</button>
+				   </div>
+				  </div>
+				 </div>
+				</div>
+				</div>	
+		</div>
+		
+		<!-- the shopping cart section -->
+		
+			<div class="cart-container" id="headerrow7">
+			  <h2>Cart</h2>
+			  <table>
+				<thead>
+				  <tr>
+				  <th><strong>Product</strong></th>
+				  <th><strong>Price</strong></th>
+				</tr>
+				</thead>
+				<tbody id="carttable">
+				</tbody>
+			  </table>
+			  <hr>
+			  <table id="carttotals">
+				<tr>
+				  <td><strong>Items</strong></td>
+				  <td><strong>Total</strong></td>
+				</tr>
+				<tr>
+				  <td>x <span id="itemsquantity">0</span></td>
+				 
+				  <td>£<span id="total">0</span></td>
+				</tr></table>
+
+				
+			  <div class="cart-buttons">  
+				<button id="emptycart">Empty Cart</button>
+				<button id="checkout" onclick="checkoutNow()">Checkout</button>
+			  </div>
+			</div>
+			
+			<!--other products section-->
+		
+			<div class="row" id="headerrow6">
+				<div class="col-sm-12" id="headerrow5">
+				<h2>Other products</h2>
+				</div>
+			</div>
+
+			<div class="row" id="headerrow3">
+				<div class="col-sm-4" id="productheaders">
+					<h2>Phone Product</h2>
+					<h4>shop now</h4>
+					<a href="phone_product.html">
+						<img class="header_image" alt"phone" src="images_folder/phone_nav.jfif" width="100%" />
+					</a>
+				</div>
+				 
+				<div class="col-sm-4" id="productheaders">
+					<h2>Tablet Product</h2>
+					<h4>shop now</h4>
+					<a href="tablet_product.html">
+						<img class="header_image" alt"technology" src="images_folder/tablet_nav.png" width="100%" />
+					</a>
+				</div>
+	
+				<div class="col-sm-4" id="accessoriesheaders">
+					<h2>Accessories Product</h2>
+					<h4>shop now</h4>
+					<a href="accessories_product.html">
+						<img class="header_image" alt"technology" src="images_folder/accessories_nav.jpg" width="100%" />
+					</a>
+				</div>
+			</div>
+
+			<!--copyright section-->
 			
 			<div class="row" id="headerrow2">
 			<div class="col-sm-12">
 				<p class="copyright">© 2022 Copyright: Phones4U.com</p>
 			</div>
+		</div>
 			
 			
 			
@@ -99,7 +194,7 @@
 	 
 	 
 	 
-	 
+	<script src="javascript/shopping_cart.js"></script>
 	</body>
 
 </html>
